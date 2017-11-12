@@ -8,12 +8,23 @@ import path from 'path';
 //reference to open website in browser
 //var open = require('open');
 import open from 'open';
+//importing the webpack into express
+import webpack from 'webpack';
+import config from '../webpack.config.dev';
+
 //store port number take any.
 //var port = 5191;
 const port = 5191;
 //creating instance of express
 //var app = express();
 const app = express();
+//webpack compiler config got the file.
+const compiler = webpack(config);
+
+app.use(require('webpack-dev-middleware')(compiler,{
+  noInfo:true,
+  publicPath: config.output.publicPath
+}));
 
 //tell express which route to run server
 app.get('/',function(req,res){
