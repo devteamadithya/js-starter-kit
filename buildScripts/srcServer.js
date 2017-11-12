@@ -33,4 +33,7 @@ app.listen(port,function(err){
 //to run the server type lt --port #number it returns the url. just copy and paste in browser.
 // custom url ==> lt --port #num adithya it will return custom url.
 
+//npm script for automation. Instead of running express server we can use automation by
+//adding start: the path in the scripts in packgae.json file and then if we type npm start
+//it will run the express code.
 
