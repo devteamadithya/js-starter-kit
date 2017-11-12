@@ -1,3 +1,5 @@
+import './index.css';
+
 import numeral from 'numeral';
 
 const myBalance = numeral(100000).format('$0,000');
