@@ -37,3 +37,10 @@ app.listen(port,function(err){
 //adding start: the path in the scripts in packgae.json file and then if we type npm start
 //it will run the express code.
 
+//If you want to run the task parallel like open localhost and check security issues via nsp
+//in package.json script enter "npm-run-all --parallel x y" before that
+//assign what commands to run for x and what commands to run task y and give the command above
+//to run parallel. just type npm start to run all the task in parallel
+// if you want in slient mode type npm start -s
+
+
