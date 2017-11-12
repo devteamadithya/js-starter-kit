@@ -1,0 +1,1 @@
+This is the javascript starter kit using for all projects starter kit. 
