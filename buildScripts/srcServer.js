@@ -1,14 +1,19 @@
 //calling express.
-var express = require('express');
+//var express = require('express');
+//es6 version imports and const
+import express from 'express';
 //path reference
-var path = require('path');
+//var path = require('path');
+import path from 'path';
 //reference to open website in browser
-var open = require('open');
-
+//var open = require('open');
+import open from 'open';
 //store port number take any.
-var port = 5191;
+//var port = 5191;
+const port = 5191;
 //creating instance of express
-var app = express();
+//var app = express();
+const app = express();
 
 //tell express which route to run server
 app.get('/',function(req,res){

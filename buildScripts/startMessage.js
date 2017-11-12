@@ -1,4 +1,8 @@
-var chalk = require('chalk');
+//var chalk = require('chalk');
+//Es6 version importing bcz we are using babel.
+//babel support es6 version which has many features to use in js.
+//inorder to run nms in package.json we have to add babel- before node.
+import chalk from 'chalk';
 
 console.log(chalk.blue('Your application is starting in dev mode'));
 
