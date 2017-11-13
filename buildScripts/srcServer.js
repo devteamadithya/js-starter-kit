@@ -35,7 +35,7 @@ app.get('/',function(req,res){
 app.listen(port,function(err){
   //if error comes white hiting the port show error otherwise show me index.html
   if(err){
-    console.log(err);
+    console.log(err); //eslint-disable-line no-console
   }
   else {
     open('http://localhost:' + port);
